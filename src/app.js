@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import './styles/styles.scss';
 import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
-import { addExpense } from './actions/expenses';
-import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 import AppRouter from './routers/AppRouter';
 
 
 const store = configureStore();
+console.log('test')
 
 const jsx = (
     <Provider store={store}>
