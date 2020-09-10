@@ -5,7 +5,6 @@
   "author": "Hussein Badawy",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack --env development",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -27,13 +26,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^4.2.1",
-    "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.0.0",
-    "enzyme-adapter-react-16.1": "^1.6.3",
-    "enzyme-to-json": "^3.5.0",
     "express": "^4.17.1",
-    "jest": "^26.4.2",
-    "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.11.1",
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",
@@ -46,15 +39,19 @@
     "react-modal": "^3.11.2",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
-    "react-test-renderer": "^16.13.1",
     "redux": "^4.0.5",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
     "uuid": "^8.3.0",
-    "webpack": "^4.44.1",
-    "webpack-dev-server": "^3.11.0"
+    "webpack": "^4.44.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "jest": "^26.4.2",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16.1": "^1.6.3",
+    "enzyme-to-json": "^3.5.0",
+    "react-test-renderer": "^16.13.1",
+    "webpack-dev-server": "^3.11.0"
   }
 }
