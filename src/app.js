@@ -6,10 +6,9 @@ import { Provider } from 'react-redux';
 import 'normalize.css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 import AppRouter from './routers/AppRouter';
-
+import './firebase/firebase';
 
 const store = configureStore();
-console.log('test')
 
 const jsx = (
     <Provider store={store}>
