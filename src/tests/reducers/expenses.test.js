@@ -24,10 +24,21 @@ test('should add expense', () => {
 });
 
 
+test('should set expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses
+    };
+
+    const state = expensesReducer([], action);
+    expect(state).toEqual([...expenses])
+})
+
+
 test('should edit expense', () => {
     const action = {
         type: 'EDIT_EXPENSE',
-        id: 1,
+        id: '1',
         updates: {
             description: 'Medusa 2.2',
             note: 'kora'
@@ -35,7 +46,7 @@ test('should edit expense', () => {
     }
     const state = expensesReducer(expenses, action)
     expect(state[0]).toEqual({
-        id: 1,
+        id: '1',
         description: 'Medusa 2.2',
         note: 'kora',
         amount: 1200,
@@ -48,7 +59,7 @@ test('should edit expense', () => {
 test('should remove expense', () => {
     const action = {
         type: 'REMOVE_EXPENSE',
-        id: 2,
+        id: '2',
 
     }
     const state = expensesReducer(expenses, action)
