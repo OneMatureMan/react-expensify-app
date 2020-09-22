@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should setup LoginPage component correctly 1`] = `
-<form
-  onSubmit={[Function]}
+<div
+  className="box-layout"
 >
-  <label>
-    Username: 
-  </label>
-  <input
-    name="username"
-    type="text"
-  />
-  <label>
-    Password: 
-  </label>
-  <input
-    name="password"
-    type="password"
-  />
-  <button>
-    Login
-  </button>
-</form>
+  <div
+    className="box-layout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      Expensify
+    </h1>
+    <p>
+      It's time to get your expenses under control.
+    </p>
+    <button
+      className="button"
+    >
+      Login with Google
+    </button>
+  </div>
+</div>
 `;

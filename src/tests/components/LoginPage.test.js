@@ -13,9 +13,7 @@ test('should setup LoginPage component correctly', () => {
 test('should setup LoginPage component correctly', () => {
     const startLogin = jest.fn()
     const wrapper = shallow(<LoginPage startLogin={startLogin} />);
-    wrapper.find('form').simulate('submit', {
-        preventDefault: () => { }
-    });
+    wrapper.find('button').simulate('click');
     expect(startLogin).toHaveBeenCalled();
 });
 
