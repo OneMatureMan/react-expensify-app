@@ -21,6 +21,9 @@ exports[`Should return 1 expense with a total of 1200 1`] = `
         $12.00
       </span>
     </h1>
+    <VisibleExpenses
+      expensesCount={1}
+    />
     <div
       className="page-header__actions"
     >
@@ -59,6 +62,9 @@ exports[`Should return 2 expenses with a total of 80000 1`] = `
         $800.00
       </span>
     </h1>
+    <VisibleExpenses
+      expensesCount={1}
+    />
     <div
       className="page-header__actions"
     >
