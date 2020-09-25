@@ -12,7 +12,6 @@ const RemoveModal = (props) => (
         className='modal'
     >
         <h3 className='modal__title'>Remove Expense?</h3>
-        {/* <p className='modal__body'>Are you sure that you want to remove the expense?</p> */}
         <button className='button button--remove' onClick={props.onRemoveExpense}>Remove</button>
         <button className='button' onClick={props.handleCloseModal}>Close</button>
     </Modal>

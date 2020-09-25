@@ -7,10 +7,42 @@
     padding: $s-size;
 }
 
+.button--navlink {
+    align-self: flex-start;
+    border-radius: 3px;
+}
+
+.navlink-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 3px 0;
+    margin: 0;
+    width: 0;
+    text-decoration: none;
+}
+
 .button--link {
     background: none;
 }
 
+.button--signin {
+    background: #2ea44f;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.button--signup {
+    background: $grey;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: $s-size;
+}
+
+.button--alternative-signin {
+    border-radius: 3px;
+    font-size: $font-size-small;
+    width: 47%;
+}
 
 .button--secondary {
     background: #888;

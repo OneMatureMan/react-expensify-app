@@ -41,7 +41,9 @@ firebase.auth().onAuthStateChanged((user) => {
     } else {
         store.dispatch(logout());
         renderApp();
-        history.push('/')
+        if(history.location.pathname !== '/signup' && history.location.pathname !== '/') {
+            history.push('/')
+        }
     }
 });
 
